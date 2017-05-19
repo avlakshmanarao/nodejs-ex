@@ -28,11 +28,23 @@ describe('Basic routes tests', function() {
         })
 
     })
+
      it('GET to /pagecount should return 300', function(done){
         chai.request(reqServer)
         .get('/pagecount')
         .end(function(err, res) {
             res.should.have.status(300);
+			     done();
+        })
+
+    })
+
+    
+    it('GET to /pagecount should return 500', function(done){
+        chai.request(reqServer)
+        .get('/pagecount')
+        .end(function(err, res) {
+            res.should.have.status(500);
             done();
         })
 

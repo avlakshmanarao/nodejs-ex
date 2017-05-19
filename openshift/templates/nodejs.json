@@ -282,5 +282,11 @@
       "description": "The custom NPM mirror URL",
       "value": ""
     }
+    {
+      "name": "NPM_MIRROR1",
+      "displayName": "Custom NPM Mirror URL1",
+      "description": "The custom NPM mirror URL1",
+      "value": ""
+    }	
   ]
 }
